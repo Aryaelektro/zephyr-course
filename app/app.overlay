@@ -1,0 +1,11 @@
+/{
+	leds: leds {
+		compatible = "gpio-leds";
+		green_led_2: led_2 {
+			gpios = <&gpioa 5 GPIO_ACTIVE_HIGH>;
+		};
+	};
+    aliases{
+        app-led = &green_led_2;
+    };
+};

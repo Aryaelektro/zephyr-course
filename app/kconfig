@@ -94,7 +94,12 @@ if (LED_SUBSYSTEM)
         endmenu
 
     endif
-
+    config APP_HEARTBEAT_PERIOD_MS
+        int "Application Heartbeat Period (ms)"
+        default 500
+        range 100 2000
+        help
+            Set the period for the application heartbeat in milliseconds.
 endif
 
 menu "Zephyr Kernel and Subsystems"
