@@ -1,0 +1,6 @@
+board:
+  name: our_board
+  full_name: Nucleo L476RG
+  vendor: arya
+  socs:
+    - name: stm32l476xx
